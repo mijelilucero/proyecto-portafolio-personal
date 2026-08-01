@@ -19,6 +19,17 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
+h2{
+    color: var(--color-acento-claro);
+    margin-bottom: 20px;
+}
+
+h3{
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+
 #navbar-principal {
     background-color: var(--color-fondo);
     padding: 10px 20px;
@@ -79,6 +90,7 @@ header h1{
     header {
         padding: 40px 20px;
     }
+
     header h1 {
         font-size: 2rem;
     }
@@ -97,4 +109,47 @@ header img {
     width: 100%;
     border: 3px solid var(--color-acento);
     box-shadow: 0 0 80px #023E8A;
+}
+
+#biografia {
+    padding: 100px 0;
+}
+
+#biografia img {
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 0 0 80px #023E8A;
+}
+
+#biografia .col-md-8 {
+    padding-left: 50px;
+    align-content: center;
+}
+
+#biografia h3 {
+    padding-top: 10%;
+    padding-bottom: 15px;
+}
+
+#biografia .badge {
+    background-color: color-mix(in srgb, var(--color-acento) 25%, transparent);
+    border: 1px solid var(--color-fondo-alt-claro);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 767px) {
+
+    #biografia {
+        padding: 40px 20px;
+    }
+
+    #biografia img { 
+        max-width: 70%;
+        margin-bottom: 40px;
+    } 
+
+    #biografia .col-md-8 {
+        padding: 0px 12px;
+    }
 }
