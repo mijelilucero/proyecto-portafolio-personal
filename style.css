@@ -1,11 +1,12 @@
 :root {
-    --color-fondo: #00072D;
-    --color-fondo-alt: #00072D;
-    --color-acento: #0077B6;
-    --color-acento-claro: #0077B6;
-    --color-acento-oscuro: #023E8A;
+    --color-fondo: #000314;
+    --color-fondo-alt-oscuro: #000524;
+    --color-fondo-alt-claro: #00072D;
+    --color-acento: #2196F3;
+    --color-acento-claro: #64B5F6;
+    --color-acento-oscuro: #1976D2;
     --color-texto: #FFFFFF;
-    --color-texto-secundario: #BBDEFB;
+    --color-texto-secundario: #8C9EAB;
 }
 
 body {
@@ -16,4 +17,84 @@ body {
 
 h1, h2, h3 {
     font-weight: 500;
+}
+
+#navbar-principal {
+    background-color: var(--color-fondo);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navbar-principal .navbar-brand {
+    color: var(--color-acento);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#navbar-principal .nav-link {
+    color: var(--color-texto-secundario);
+    transition: color 0.2s ease;
+
+}
+
+#navbar-principal .nav-link:hover {
+    color: var(--color-acento-claro);
+    font-weight: 800;
+    border-bottom: 2px solid var(--color-acento-claro);
+}
+
+#navbar-principal .btn-outline-light {
+    background-color: var(--color-acento);
+    border: 0;
+    border-radius: 20px;
+    width: 150px;
+}
+
+#navbar-principal .btn-outline-light:hover {
+    background-color: var(--color-acento-claro);
+    color: var(--color-texto);
+    font-weight: 800;
+    transform: translateY(-2px);
+}
+
+header {
+    background: linear-gradient(360deg, var(--color-fondo-alt-claro) 0%, var(--color-fondo) 100%);
+    padding: 100px 0;
+}
+
+header h1{
+    color: var(--color-acento);
+    font-size: 3.5rem;
+}
+
+@media (max-width: 991px) {
+    header h1 {
+        font-size: 2.75rem;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 40px 20px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header img { 
+        max-width: 70%;
+        margin-bottom: 40px;
+    } 
+}
+
+header .lead {
+    font-weight: 700;
+}
+
+header img {
+    width: 100%;
+    border: 3px solid var(--color-acento);
+    box-shadow: 0 0 80px #023E8A;
 }
