@@ -218,6 +218,7 @@ header img {
 #proyectos .card-body {
     position: relative;
     background-color: #001C55;
+    padding: 30px;
 }
 
 #proyectos .card-body::before {
