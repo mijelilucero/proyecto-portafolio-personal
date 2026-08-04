@@ -141,6 +141,7 @@ header img {
     border: 1px solid var(--color-fondo-alt-claro);
     font-weight: 600;
     padding: 0.5rem 1rem;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 767px) {
@@ -185,7 +186,7 @@ header img {
 }
 
 #intereses-habilidades img{
-    max-width: 5vw;
+    max-width: 50px;
     margin-top: 30px;
 }
 
@@ -277,14 +278,10 @@ header img {
     #proyectos{
         padding: 40px 20px;
     }
+}
 
-    #proyectos .col-12 {
-        margin-bottom: 24px;
-    }
-
-    #proyectos .col-12:last-child {
-        margin-bottom: 0;
-    }
+#proyectos .col-12 {
+    margin-bottom: 24px;
 }
 
 #vision-profesional{
