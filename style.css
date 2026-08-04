@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 h2{
     color: var(--color-acento-claro);
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 h3{
@@ -116,6 +116,10 @@ header img {
     padding: 100px 0;
 }
 
+#biografia h2{
+    margin-bottom: 20px;
+}
+
 #biografia img {
     border-radius: 30px;
     width: 100%;
@@ -128,8 +132,8 @@ header img {
 }
 
 #biografia h3 {
-    padding-top: 10%;
-    padding-bottom: 15px;
+    margin-top: 70px;
+    margin-bottom: 15px;
 }
 
 #biografia .badge {
@@ -160,12 +164,8 @@ header img {
     padding: 100px 0;
 }
 
-#intereses-habilidades h2 {
-    margin-bottom: 60px;
-}
-
 #intereses-habilidades h3 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #intereses-habilidades .list-group-item {
@@ -189,5 +189,82 @@ header img {
     margin-top: 30px;
 }
 
+#proyectos {
+    padding: 100px 0;
+}
 
+#proyectos .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
 
+#proyectos .card {
+    position: relative;
+    overflow: hidden;
+    background-color: #001C55;
+    color: var(--color-texto);
+    border: none;
+    border-radius: 30px;
+}
+
+#proyectos .card-body {
+    position: relative;
+    background-color: #001C55;
+}
+
+#proyectos .card-body::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        color-mix(in srgb, #001C55 40%, transparent) 50%,
+        #001C55 100%
+    );
+    pointer-events: none;
+}
+
+#proyectos .card-title {
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+#proyectos .card-text {
+    font-size: 0.9rem;
+}
+
+#proyectos .badge {
+    background-color: color-mix(in srgb, var(--color-acento-claro) 20%, transparent);
+    border: 1px solid var(--color-acento-claro);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#proyectos .btn-light {
+    background-color: var(--color-acento);
+    border: 0;
+    border-radius: 20px;
+    width: 70%;
+    color: var(--color-texto);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#proyectos .btn-light:hover {
+    background-color: var(--color-acento-claro);
+    color: var(--color-texto);
+    font-weight: 800;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+
+    #intereses-habilidades, #proyectos{
+        padding: 40px 20px;
+    }
+}
