@@ -308,7 +308,6 @@ header img {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 130px;
     background-color: color-mix(in srgb, var(--color-acento) 15%, transparent);
     color: var(--color-texto);
     border: none;
@@ -318,5 +317,79 @@ header img {
     line-height: 1.4;
     white-space: normal;
     text-align: center;
-    padding: 1.5rem;
+    padding: 40px;
+}
+
+#pie-pagina {
+    background: linear-gradient(180deg, #001C55 0%, var(--color-fondo-alt-claro) 100%);
+    padding: 70px 0;
+}
+
+#nombre-pie {
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--color-acento);
+}
+
+#email-pie{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#pie-pagina .btn {
+    background-color: var(--color-acento);
+    border: 0;
+    border-radius: 20px;
+    width: 50%;
+    color: var(--color-texto);
+}
+
+#pie-pagina .btn:hover {
+    background-color: var(--color-acento-claro);
+    color: var(--color-texto);
+    font-weight: 800;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    #pie-pagina .col-md-4:not(:last-child) {
+        position: relative;
+    }
+
+    #pie-pagina .col-md-4:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 40px;
+        background-color: var(--color-texto);
+    }
+}
+
+@media (max-width: 767px) {
+        #pie-pagina {
+        padding: 40px 20px;
+    }
+
+    #pie-pagina .col-12 {
+        margin-bottom: 30px;
+    }
+
+    #pie-pagina .col-12:not(:last-child) {
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    #pie-pagina .col-12:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 1px;
+        background-color: var(--color-texto);
+    }
 }
