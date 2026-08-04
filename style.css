@@ -189,6 +189,13 @@ header img {
     margin-top: 30px;
 }
 
+@media (max-width: 767px) {
+
+    #intereses-habilidades {
+        padding: 40px 20px;
+    }
+}
+
 #proyectos {
     padding: 100px 0;
 }
@@ -206,6 +213,7 @@ header img {
     border: none;
     border-radius: 30px;
 }
+
 
 #proyectos .card-body {
     position: relative;
@@ -239,7 +247,8 @@ header img {
 
 #proyectos .badge {
     background-color: color-mix(in srgb, var(--color-acento-claro) 20%, transparent);
-    border: 1px solid var(--color-acento-claro);
+    border: 1px solid var(--color-acento-oscuro);
+    border-radius: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -264,7 +273,50 @@ header img {
 
 @media (max-width: 767px) {
 
-    #intereses-habilidades, #proyectos{
+    #proyectos{
         padding: 40px 20px;
     }
+
+    #proyectos .col-12 {
+        margin-bottom: 24px;
+    }
+
+    #proyectos .col-12:last-child {
+        margin-bottom: 0;
+    }
+}
+
+#vision-profesional{
+    background: var(--color-fondo-alt-oscuro);
+    padding: 100px 0;
+}
+
+@media (max-width: 767px) {
+
+    #vision-profesional{
+        padding: 40px 20px;
+    }
+}
+
+#vision-profesional h3{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#vision-profesional .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    background-color: color-mix(in srgb, var(--color-acento) 15%, transparent);
+    color: var(--color-texto);
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    white-space: normal;
+    text-align: center;
+    padding: 1.5rem;
 }
